@@ -1,0 +1,14 @@
+export PATH=~/Your_Toolchain_PATH/
+for example:
+export PATH=/prebuilts/gcc/linux-x86/arm/arm-linux-androideabi-4.6/bin:$PATH
+
+Build Command:
+(uboot had been phase out from jb)
+kernel
+======
+cd kernel directory
+export TARGET_PRODUCT=acer17_tb_wifi_only_jb
+export MTK_ROOT_CUSTOM=../mediatek/custom/
+make or 
+./build.sh (comeout kernel binary file under ../OUT/ )
+
